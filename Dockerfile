@@ -9,6 +9,7 @@ RUN yum -y install bind-utils
 
 # Add start.sh
 COPY start.sh /usr/local/bin/start.sh
+RUN chmod +x /usr/local/bin/start.sh
 
 # Sleep for 60m then exit
 CMD ["/usr/local/bin/start.sh"]
