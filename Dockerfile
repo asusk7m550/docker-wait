@@ -5,7 +5,7 @@ MAINTAINER Jasper Aikema <jaikema@it-ernity.nl>
 RUN yum -y update && yum clean all
 
 # Install software
-RUN yum -y install bind-utils
+RUN yum -y install bind-utils iproute
 
 # Add start.sh
 COPY start.sh /usr/local/bin/start.sh
